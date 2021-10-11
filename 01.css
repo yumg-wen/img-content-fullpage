@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 700px;
+    /* background: #ccc; */
+
+    background:linear-gradient(115deg,#7bf 50%,transparent 50%) center center / 100% 100%,
+    url(https://picsum.photos/1200/600?random=1) right center /auto 100%;
+    /* 多重背景寫法 */
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+
+.banner-txt{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /*banner-txt h1的 boder-bottom會滿版，因為flex特性，會占滿整個次軸的畫面，用align-items解決 */
+  
+}
+.banner-txt h1{
+    font-size: 80px;
+    border-bottom: 1px solid #333;
+    font-weight: 900;
+    margin-bottom: 0.3em;
+    padding-bottom: 0.3em;
+
+}
+.banner-txt h1 small{
+    display: block;
+    font-size: 53px;
+    font-weight: 700;
+} 
+.banner-txt h2{
+    font-size: 50px;
+    font-weight: 700;
+}
+.banner-text p{
+    font-size: 30px;
+    font-weight: 300;
+}
